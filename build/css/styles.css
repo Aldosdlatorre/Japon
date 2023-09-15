@@ -3,6 +3,7 @@
   height: 100vh;
   background-image: url(../img/castillo-japones.webp);
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
@@ -146,6 +147,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  font-size: 3.4rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
 p {
   font-size: 2.4rem;
   margin-bottom: 4rem;
@@ -198,7 +207,6 @@ iframe {
 
 .titulo {
   text-align: center;
-  font-size: 2.4rem;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -255,7 +263,6 @@ iframe {
   }
 }
 .ingredientes .ingrediente__titulo {
-  font-size: 3.6rem;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
