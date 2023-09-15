@@ -1,0 +1,50 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.header{
+    padding: 2rem;
+    height: 100vh;
+    background-image: url(../img/castillo-japones.webp);
+    // background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    &::before{
+        content: '';
+        background-color: black;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        opacity: .5;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    position: relative;
+    color: white;
+    margin-top: 15rem;
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: var.$fuenteSecundaria;
+
+    span{
+        display: block;
+        color: var.$rosa;
+    }
+
+    @include mix.tablet {
+        margin-top: 30rem;
+        font-size: 3rem;
+        span{
+            display: inline;
+        }
+    }
+}

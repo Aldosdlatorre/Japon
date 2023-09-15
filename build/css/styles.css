@@ -1,0 +1,291 @@
+.header {
+  padding: 2rem;
+  height: 100vh;
+  background-image: url(../img/castillo-japones.webp);
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.heading {
+  position: relative;
+  color: white;
+  margin-top: 15rem;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+}
+.heading span {
+  display: block;
+  color: rgb(251, 113, 136);
+}
+@media (min-width: 768px) {
+  .heading {
+    margin-top: 30rem;
+    font-size: 3rem;
+  }
+  .heading span {
+    display: inline;
+  }
+}
+
+.barra {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.barra .logo img {
+  width: 10rem;
+}
+@media (min-width: 768px) {
+  .barra .logo {
+    width: 15rem;
+  }
+}
+.barra .button {
+  background-color: transparent;
+  border: none;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .barra .button {
+    display: none;
+  }
+}
+.barra .button .svg {
+  width: 4rem;
+  height: 4rem;
+  color: white;
+}
+
+.navegacion {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .navegacion {
+    margin-top: 0;
+    display: flex;
+    gap: 4rem;
+  }
+}
+.navegacion a {
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+}
+.navegacion a:last-child {
+  margin-bottom: 0;
+}
+.navegacion a:hover {
+  color: rgb(251, 113, 136);
+  transition: all 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .navegacion a {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+  line-height: 1.6;
+}
+p:last-child {
+  margin-bottom: 0;
+}
+p span {
+  font-weight: 700;
+}
+
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
+}
+
+iframe {
+  max-width: 100%;
+  width: 100%;
+  height: 40rem;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  font-family: "Merriweather", serif;
+  background-color: rgb(251, 113, 136);
+  transition: all 0.3s ease;
+  border-radius: 2rem;
+}
+.btn:hover {
+  opacity: 0.5;
+  color: white;
+  color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.contenido-principal {
+  margin-top: 4rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 2rem 0;
+}
+.titulo .separador::after {
+  content: "";
+  display: block;
+  max-width: 15rem;
+  height: 1px;
+  background-color: rgb(251, 113, 136);
+  margin: 0.5rem auto;
+}
+.titulo .texto {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: rgb(137, 137, 137);
+}
+
+.viajes {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .viajes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.viajes_nosotros {
+  margin-top: 8rem;
+}
+
+.ingredientes {
+  margin-top: 8rem;
+}
+.ingredientes .ingrediente {
+  display: grid;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.ingredientes .ingrediente:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .ingredientes .ingrediente {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ingredientes .ingrediente:nth-child(even) .ingrediente__texto {
+    order: 1;
+  }
+}
+.ingredientes .ingrediente__titulo {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .ingredientes .ingrediente__titulo {
+    text-align: start;
+  }
+}
+
+.galeria {
+  display: flex;
+  max-width: 100%;
+  height: 80rem;
+}
+.galeria img {
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  transition: 0.7s ease;
+}
+.galeria img:hover {
+  width: 50rem;
+  opacity: 1;
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}

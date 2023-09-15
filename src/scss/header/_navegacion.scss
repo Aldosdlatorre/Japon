@@ -1,0 +1,71 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.barra{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include mix.tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        img{
+            width: 10rem;
+        }
+        @include mix.tablet {
+            width: 15rem;
+        }
+    }
+
+    .button{
+        // display:block;
+        background-color: transparent;
+        border: none;
+        margin-top: 5rem;
+        @include mix.tablet {
+            display: none;
+        }
+        .svg{
+            width: 4rem;
+            height: 4rem;
+            color: white;
+        }
+    }
+}
+
+.navegacion{
+    margin-top: 6rem;
+    @include mix.tablet {
+        margin-top: 0;
+        display: flex;
+        gap: 4rem;
+    }
+
+    a{
+        display: block;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: var.$fuentePrincipal;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        &:hover{
+            color: var.$rosa;
+            transition: all .4s ease-in-out;
+        }
+        @include mix.tablet {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+    }
+
+}

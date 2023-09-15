@@ -1,0 +1,83 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+.contenido-principal{
+    margin-top: 4rem;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: var.$fuentePrincipal;
+    font-weight: 700;
+    margin: 2rem 0;
+    
+    .separador{
+        &::after{
+            content: "";
+            display: block;
+            max-width: 15rem;
+            height: 1px;
+            background-color: var.$rosa;
+            margin: 0.5rem auto;
+        }
+    }
+
+    .texto{
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        color: var.$grisClaro;
+    }
+}
+
+.viajes{
+    display: grid;
+    gap: 4rem;
+    align-items: center;
+
+    @include mix.desktop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.viajes_nosotros{
+    margin-top: 8rem;
+}
+
+.ingredientes{
+    margin-top: 8rem;
+    .ingrediente{
+        display: grid;
+        gap: 4rem;
+        align-items: center;
+        margin-bottom: 6rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @include mix.desktop {
+            grid-template-columns: repeat(2, 1fr);
+
+            &:nth-child(even){
+                .ingrediente__texto{
+                    order: 1;
+                }
+            }
+        }
+
+        &__titulo{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-family: var.$fuentePrincipal;
+            font-weight: 400;
+            letter-spacing: 1rem;
+            margin: 2rem 0;
+            text-align: center;
+            @include mix.desktop {
+                text-align: start;
+            }
+        }
+
+    }
+}
