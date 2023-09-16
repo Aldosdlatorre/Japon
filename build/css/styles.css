@@ -24,8 +24,7 @@
 .heading {
   position: relative;
   color: white;
-  margin-top: 15rem;
-  font-size: 2rem;
+  margin-top: 10rem;
   letter-spacing: 1rem;
   text-align: center;
   text-transform: uppercase;
@@ -34,12 +33,10 @@
 }
 .heading span {
   display: block;
-  color: rgb(251, 113, 136);
 }
 @media (min-width: 768px) {
   .heading {
     margin-top: 30rem;
-    font-size: 3rem;
   }
   .heading span {
     display: inline;
@@ -61,7 +58,7 @@
   }
 }
 .barra .logo img {
-  width: 10rem;
+  width: 12rem;
 }
 @media (min-width: 768px) {
   .barra .logo {
@@ -98,7 +95,7 @@
   display: block;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -147,21 +144,35 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h2 {
-  font-size: 3.4rem;
+h1 {
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
-h3 {
+h2 {
   font-size: 2.8rem;
 }
 @media (min-width: 768px) {
-  h3 {
+  h2 {
     font-size: 3rem;
   }
 }
 
+h3 {
+  font-size: 2.6rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
 p {
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 4rem;
   line-height: 1.6;
 }
@@ -170,6 +181,15 @@ p:last-child {
 }
 p span {
   font-weight: 700;
+}
+
+p:not(.texto) {
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  p:not(.texto) {
+    text-align: start;
+  }
 }
 
 .contenedor {
@@ -187,7 +207,7 @@ iframe {
   position: relative;
   display: inline-block;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -248,7 +268,7 @@ iframe {
 }
 
 .ingredientes {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 .ingredientes .ingrediente {
   display: grid;
