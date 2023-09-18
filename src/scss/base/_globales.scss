@@ -57,6 +57,17 @@ h3{
     }
 }
 
+h4{
+    font-size: 1.8rem;
+    font-weight: normal;
+    padding: .5rem;
+    @include mix.tablet {
+        font-size: 2rem;
+        background-color: white;
+        color: black;
+    }
+}
+
 p{
     font-size: 2rem;
     margin-bottom: 4rem;
@@ -109,3 +120,4 @@ iframe{
         transition: all .4s ease-in-out;
     }
 }
+

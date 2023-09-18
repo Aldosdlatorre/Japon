@@ -41,7 +41,7 @@
     }
 }
 
-.viajes_nosotros{
+#viajes_nosotros{
     margin-top: 8rem;
 }
 
@@ -95,11 +95,6 @@
     }
 }
 
-.nuestros_viajes_grid{
-    display: grid;
-    gap: 2rem;
-}
-
 .viaje{
 
     &__titulo{
@@ -111,3 +106,60 @@
         border-width: 100%;
     }
 }
+
+.nuestros_viajes_grid{
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    @include mix.tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include mix.desktop {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.viaje{
+    
+    &__titulo{
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__imagen{
+        position: relative;
+        display: flex;
+        align-items: center;
+        img{
+            object-fit: cover;
+            @include mix.tablet {
+                height: 60rem;
+            }
+            &:hover{
+                filter: brightness(0.5);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        .texto{
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 1.6rem;
+            color: black;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: rgba(255, 255, 255, 0.599);
+            padding: .5rem 4rem;
+            &:hover{
+                background-color:black;
+                color: white;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+

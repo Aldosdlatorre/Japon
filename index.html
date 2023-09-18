@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="build/css/styles.css">
 </head>
 <body>
@@ -18,8 +19,9 @@
 
             <nav class="navegacion">
                 <a href="">Inicio</a>
-                <a href="">Nosotros</a>
-                <a href="">Contacto</a>
+                <a href="#viajes_nosotros">Nosotros</a>
+                <a href="#nuestros_viajes">Viajes</a>
+                <a href="#contacto">Contacto</a>
             </nav>
         </div>
 
@@ -51,7 +53,7 @@
             </div>
         </section>
 
-        <section class="viajes_nosotros">
+        <section id="viajes_nosotros">
             <div class="titulo">
                 <h2>¿Cómo es viajar a japón con nosotros?</h2>
                 <div class="separador"></div>
@@ -125,7 +127,7 @@
         <p>100% LIBRE DE PREOCUPACIONES PARA PODER CENTRARTE EN DISFRUTAR LA EXPERIENCIA</p>
     </div>
 
-    <section class="nuestros_viajes contenedor">
+    <section id="nuestros_viajes" class="contenedor">
         <div class="titulo">
             <h2>Nuestros viajes a japón</h2>
             <div class="separador"></div>
@@ -138,11 +140,86 @@
                     <h4>Para quien aún no ha ido</h4>
                 </div>
                 <div class="viaje__imagen">
-                    <a href="">Japón escencial</a>
+                    <a href="">
+                        <img src="build/img/img1.webp" alt="">
+                    </a>
+                
+                    <a class="texto" href="">Japón Escencial</a>
+                </div>
+            </div>
+
+            <div class="viaje">
+                <div class="viaje__titulo">
+                    <h4>Para vivir naturaleza</h4>
+                </div>
+                <div class="viaje__imagen">
+                    <a href="">
+                        <img src="build/img/img4.webp" alt="">
+                    </a>
+                
+                    <a class="texto" href="">Japón Salvaje</a>
+                </div>
+            </div>
+
+            <div class="viaje">
+                <div class="viaje__titulo">
+                    <h4>Para viajar en el tiempo</h4>
+                </div>
+                <div class="viaje__imagen">
+                    <a href="">
+                        <img src="build/img/img2.webp" alt="">
+                    </a>
+                
+                    <a class="texto" href="">Para desarrollarse</a>
+                </div>
+            </div>
+
+            <div class="viaje">
+                <div class="viaje__titulo">
+                    <h4>Para quien aún no ha ido</h4>
+                </div>
+                <div class="viaje__imagen">
+                    <a href="">
+                        <img src="build/img/img3.webp" alt="">
+                    </a>
+                
+                    <a class="texto" href="">Creciendo con japón</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="contacto" class="contacto contenedor">
+        <div class="titulo">
+            <h2>¿Quieres reservar con nosotros?</h2>
+            <div class="separador"></div>
+            <p class="texto">Somos tu mejor opción</p>
+        </div>
+
+        <section class="form-register">
+            <h4>Contacto</h4>
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+            <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+            <input class="controls" type="text" name="telefono" id="telefono" placeholder="Ingrese su Telefono">
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <input class="botons" type="submit" value="Enviar">
+          </section>
+    </section>
+
+    <footer class="footer">
+      <h5>Siguenos en nuestras redes sociales</h5>
+        <div class="footer__redes">
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="copy">
+            <p>© 2023 Todos los derechos reservados - Viajes Japón</p>
+        </div>
+        
+    </footer>
 
 </body>
 </html>

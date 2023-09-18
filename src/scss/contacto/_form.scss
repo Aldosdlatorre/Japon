@@ -1,0 +1,67 @@
+@use 'base/variables' as var;
+@use 'base/mixins' as mix;
+
+#contacto{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+ }
+ 
+ .form-register {
+     max-width: 60rem;
+     background-color: white;
+     padding: 3rem;
+     margin: auto;
+     margin-top: 10rem;
+     border-radius: 4px;
+     box-shadow: 1px 1px 20px black;
+   }
+   
+   .form-register h4 {
+     font-size: 22px;
+     margin-bottom: 20px;
+     background-color: unset;
+     color: black;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 700;
+   }
+   
+   .controls {
+     width: 100%;
+     background: #ffffff;
+     padding: 10px;
+     border-radius: 4px;
+     margin-bottom: 16px;
+     border: 1px solid var.$rosa;
+     font-size: 1.6rem;
+     color: white;
+   }
+   
+   .form-register p {
+     height: 4rem;
+     text-align: center;
+     color: black;
+     font-size: 18px;
+     line-height: 40px;
+   }
+   
+   .form-register a {
+     color: black;
+     text-decoration: none;
+   }
+   
+   .form-register a:hover {
+     color: var.$rosa;
+     text-decoration: underline;
+   }
+   
+   .form-register .botons {
+     width: 100%;
+     background: var.$rosa;
+     border: none;
+     padding: 12px;
+     color: white;
+     margin: 16px 0;
+     font-size: 16px;
+   }
+ 

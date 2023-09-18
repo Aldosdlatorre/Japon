@@ -177,6 +177,19 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  padding: 0.5rem;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 2rem;
+    background-color: white;
+    color: black;
+  }
+}
+
 p {
   font-size: 2rem;
   margin-bottom: 4rem;
@@ -269,7 +282,7 @@ iframe {
   }
 }
 
-.viajes_nosotros {
+#viajes_nosotros {
   margin-top: 8rem;
 }
 
@@ -321,11 +334,6 @@ iframe {
   margin-top: 2rem;
 }
 
-.nuestros_viajes_grid {
-  display: grid;
-  gap: 2rem;
-}
-
 .viaje__titulo {
   background-color: black;
   width: -webkit-max-content;
@@ -334,6 +342,66 @@ iframe {
   color: white;
   border-bottom: 1px solid black;
   border-width: 100%;
+}
+
+.nuestros_viajes_grid {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4rem;
+}
+@media (min-width: 768px) {
+  .nuestros_viajes_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .nuestros_viajes_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.viaje__titulo {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.viaje__imagen {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.viaje__imagen img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .viaje__imagen img {
+    height: 60rem;
+  }
+}
+.viaje__imagen img:hover {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  transition: all 0.3s ease-in-out;
+}
+.viaje__imagen .texto {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.6rem;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.599);
+  padding: 0.5rem 4rem;
+}
+.viaje__imagen .texto:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .galeria {
@@ -355,4 +423,121 @@ iframe {
   opacity: 1;
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
+}
+
+#contacto {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+.form-register {
+  max-width: 60rem;
+  background-color: white;
+  padding: 3rem;
+  margin: auto;
+  margin-top: 10rem;
+  border-radius: 4px;
+  box-shadow: 1px 1px 20px black;
+}
+
+.form-register h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  background-color: unset;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.controls {
+  width: 100%;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(251, 113, 136);
+  font-size: 1.6rem;
+  color: white;
+}
+
+.form-register p {
+  height: 4rem;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.form-register a {
+  color: black;
+  text-decoration: none;
+}
+
+.form-register a:hover {
+  color: rgb(251, 113, 136);
+  text-decoration: underline;
+}
+
+.form-register .botons {
+  width: 100%;
+  background: rgb(251, 113, 136);
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.footer {
+  border-top: 1px solid white;
+  margin-top: 10rem;
+  background-color: black;
+  padding: 2rem;
+}
+.footer h5 {
+  text-align: center;
+  color: white;
+  font-size: 2.4rem;
+}
+@media (min-width: 768px) {
+  .footer h5 {
+    color: white;
+  }
+}
+.footer__redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .footer__redes {
+    flex-direction: row;
+    gap: 10rem;
+    justify-content: center;
+  }
+}
+.footer__redes a {
+  color: rgb(251, 113, 136);
+  font-size: 3rem;
+}
+.footer__redes a:hover {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.footer .copy {
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .footer .copy {
+    color: white;
+  }
+}
+.footer .copy p {
+  text-align: center;
 }
