@@ -143,6 +143,12 @@ li {
 body {
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 768px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
 
 h1 {
   font-size: 3rem;
@@ -299,6 +305,35 @@ iframe {
   .ingredientes .ingrediente__titulo {
     text-align: start;
   }
+}
+
+.cobertura_medica {
+  background-color: rgb(251, 113, 136);
+  max-width: 95%;
+  margin: 0 auto;
+  color: white;
+  margin: 4rem auto 10rem;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.cobertura_medica p {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.nuestros_viajes_grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.viaje__titulo {
+  background-color: black;
+  width: -webkit-max-content;
+  width: max-content;
+  padding: 0.5rem;
+  color: white;
+  border-bottom: 1px solid black;
+  border-width: 100%;
 }
 
 .galeria {

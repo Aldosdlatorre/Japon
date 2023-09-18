@@ -79,3 +79,35 @@
         
     }
 }
+
+.cobertura_medica{
+    background-color: var.$rosa;
+    max-width: 95%;
+    margin: 0 auto;
+    color: white;
+    margin: 4rem auto 10rem;
+    padding: 4rem 2rem;
+    text-align: center;
+
+    p{
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
+
+.nuestros_viajes_grid{
+    display: grid;
+    gap: 2rem;
+}
+
+.viaje{
+
+    &__titulo{
+        background-color: black;
+        width: max-content;
+        padding: .5rem;
+        color: white;
+        border-bottom: 1px solid black;
+        border-width: 100%;
+    }
+}

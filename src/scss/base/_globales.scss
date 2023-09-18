@@ -28,6 +28,10 @@ li{
 
 body{
     font-family: var.$fuentePrincipal;
+    @include mix.tablet{
+        background-color: black;
+        color: white;
+    }
 }
 
 h1{
